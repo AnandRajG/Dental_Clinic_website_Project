@@ -209,14 +209,38 @@ npm run lint
 
 ## 🚢 Deployment (Vercel)
 
-The repository is configured for zero-configuration deployment on Vercel:
+### Manual CLI Deployment (Recommended for Manual Control)
 
-1. Push your changes to GitHub:
+To deploy manually whenever you choose, run the following commands in your project root:
+
+1. **Log in to Vercel (First-time setup only)**:
    ```bash
-   git push origin main
+   npx vercel login
    ```
-2. Import the repository into your [Vercel Dashboard](https://vercel.com/new).
-3. Vercel will automatically build and publish the production site.
+
+2. **Deploy directly to Production**:
+   ```bash
+   npx vercel --prod
+   ```
+   *This uploads and publishes your latest changes directly to your live production URL without needing Git hooks.*
+
+3. **Deploy a Preview URL (Optional for testing before publishing)**:
+   ```bash
+   npx vercel
+   ```
+
+---
+
+### Controlling Automatic GitHub Deployments
+
+If you have connected your GitHub repository to Vercel and want to push commits **without** triggering an automatic build:
+
+* Add **`[skip ci]`** or **`[skip vercel]`** to your commit message:
+  ```bash
+  git commit -m "Updated clinical notes [skip ci]"
+  git push origin main
+  ```
+* Alternatively, in your **Vercel Dashboard → Settings → Git**, click **Disconnect** under *Connected Git Repository* to switch to 100% manual CLI deployments.
 
 ---
 
