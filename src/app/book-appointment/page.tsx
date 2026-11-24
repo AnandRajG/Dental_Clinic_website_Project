@@ -162,8 +162,8 @@ function BookingForm() {
       "PRODID:-//Aura Dental Studio//Appointment//EN",
       "BEGIN:VEVENT",
       `SUMMARY:Dental Appointment: ${confirmedBooking.treatment} with ${confirmedBooking.doctor}`,
-      `DESCRIPTION:Appointment Reference: ${confirmedBooking.referenceCode}\\nPatient: ${confirmedBooking.patientName}\\nLocation: 450 Lexington Ave, New York, NY`,
-      `LOCATION:450 Lexington Ave, Suite 1400, New York, NY 10017`,
+      `DESCRIPTION:Appointment Reference: ${confirmedBooking.referenceCode}\\nPatient: ${confirmedBooking.patientName}\\nLocation: Bus Stand,Dharmapuri`,
+      `LOCATION:Bus Stand,Dharmapuri`,
       `STATUS:CONFIRMED`,
       "END:VEVENT",
       "END:VCALENDAR",
@@ -397,11 +397,10 @@ function BookingForm() {
                       key={slot.time}
                       type="button"
                       onClick={() => setTimeSlot(slot.time)}
-                      className={`p-3 rounded-xl text-xs font-bold transition-all border ${
-                        timeSlot === slot.time
-                          ? "bg-brand-teal text-white border-brand-teal shadow-xs"
-                          : "bg-white text-brand-navy border-brand-border hover:border-brand-teal/50 hover:bg-brand-aqua/30"
-                      }`}
+                      className={`p-3 rounded-xl text-xs font-bold transition-all border ${timeSlot === slot.time
+                        ? "bg-brand-teal text-white border-brand-teal shadow-xs"
+                        : "bg-white text-brand-navy border-brand-border hover:border-brand-teal/50 hover:bg-brand-aqua/30"
+                        }`}
                     >
                       <span>{slot.time}</span>
                       <span className="block text-[10px] font-normal opacity-80">{slot.period}</span>

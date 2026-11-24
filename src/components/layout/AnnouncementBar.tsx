@@ -13,7 +13,7 @@ export default function AnnouncementBar() {
           <span className="hidden sm:inline text-white/30">•</span>
           <div className="flex items-center gap-1.5">
             <MapPin className="w-3.5 h-3.5 text-brand-mint" />
-            <span>450 Lexington Ave, New York, NY</span>
+            <span>Bus Stand,Dharmapuri</span>
           </div>
         </div>
 
@@ -23,7 +23,7 @@ export default function AnnouncementBar() {
             className="flex items-center gap-1.5 text-brand-mint font-semibold hover:text-white transition-colors"
           >
             <Phone className="w-3.5 h-3.5" />
-            <span>Emergency: (800) 287-2336</span>
+            <span>Emergency: (+91) 999999999</span>
           </a>
           <span className="text-white/30">•</span>
           <Link
