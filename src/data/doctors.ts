@@ -14,7 +14,7 @@ export interface Doctor {
 export const DOCTORS: Doctor[] = [
   {
     id: "dr-michael-sterling-GG",
-    name: "Dr. Michael Sterling",
+    name: "Dr. Michael Sterling-GG",
     role: "Chief Prosthodontist & Implantologist",
     degrees: "DDS, MDS (Prosthodontics), FICOI",
     experienceYears: 16,
