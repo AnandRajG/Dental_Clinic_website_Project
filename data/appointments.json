@@ -1,0 +1,17 @@
+[
+  {
+    "id": "apt_1795493007363_6ezh42l",
+    "referenceCode": "APX-2026-6181",
+    "status": "CONFIRMED",
+    "createdAt": "2026-11-24T04:03:27.363Z",
+    "patientName": "Eleanor Vance",
+    "email": "eleanor@example.com",
+    "phone": "+1 555-234-5678",
+    "treatment": "Dental Implants",
+    "doctor": "Dr. Michael Sterling",
+    "appointmentDate": "2026-11-28",
+    "timeSlot": "10:30 AM",
+    "notes": "Consultation for lower molar implant",
+    "isNewPatient": true
+  }
+]
